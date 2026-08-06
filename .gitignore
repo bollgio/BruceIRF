@@ -24,3 +24,16 @@ lib/mquickjs_headers/mqjs_stdlib_generator.exe
 .github/agents/Bruce-AI.agent.md
 .idea
 .ai
+
+# BruceIRF fork: dev/release artifacts kept out of the repo
+*.zip
+sd_card_data/
+AGENTS.md
+build_log.txt
+build_log_embed.txt
+build_log_sticks3.txt
+build_log_fw.txt
+build_pid.txt
+build_wrapper.bat
+build_lilygo.bat
+BruceIR-Cyberpunk.json

@@ -33,7 +33,8 @@ boot_bin = build_dir / "bootloader.bin"
 part_bin = build_dir / "partitions.bin"
 app_bin  = build_dir / "firmware.bin"
 
-out_bin  = proj_dir / f"Bruce-{pioenv}.bin"
+FIRMWARE_VERSION = "3.0"  # release build; use "3.0-test" + platformio "1.16-test" for a test build
+out_bin  = proj_dir / f"BruceIRF{FIRMWARE_VERSION}-{pioenv}.bin"
 
 # Esptool from PlatformIO + Python executable
 esptool_pkg = senv.PioPlatform().get_package_dir("tool-esptoolpy")
