@@ -52,17 +52,24 @@ Flashing is done with **M5Launcher** or **ESP Web Tool** (EspWebTool). There is 
 
 ## :open_file_folder: Install — IR + RF database
 
-The database ships as two archives (IR + RF together):
+The database folders are included in this repository:
 
-| Archive | Content | Use for |
+| Folder | Content | Use for |
 |---|---|---|
-| `BruceIR3.0-UniversalIR-RF-Full.zip` | IR 829 + RF 13.275 files (~156 MB) | **SD card** users (T-Embed) |
-| `BruceIR3.0-UniversalIR-RF-Lite.zip` | IR 7 + RF 103 files | **LittleFS** (no-SD boards, M5StickS3) |
+| `UniversalIR/` + `UniversalRF/` | **Lite** (IR 7 + RF 103 files) | **LittleFS** (no-SD boards, M5StickS3) |
+| `UniversalIR-Full/` + `UniversalRF-Full/` | **Full** (IR 829 + RF 13.275 files, ~156 MB) | **SD card** users (T-Embed) |
 
-- **SD card:** extract the archive onto your SD card so you get the folders `UniversalIR` and `UniversalRF`.
-- **LittleFS:** upload the archive contents into LittleFS using Bruce's Web UI → File Manager.
+### SD card (Full)
+Copy the **contents** of `UniversalIR-Full` and `UniversalRF-Full` to the root of your SD card, renaming the folders to `UniversalIR` and `UniversalRF` — so your SD card ends up with the folders `UniversalIR` and `UniversalRF`.
 
-The modules find the folders **both at the storage root and inside a single wrapper folder** (some file managers extract the archive into a folder named after the `.zip`) — no manual moving needed.
+### LittleFS (Lite)
+Upload the contents of `UniversalIR` and `UniversalRF` into LittleFS using Bruce's Web UI → File Manager.
+
+The modules find the folders **both at the storage root and inside a single wrapper folder** (some file managers extract an archive into a folder named after the `.zip`) — no manual moving needed.
+
+The same content is also distributed as two combined archives:
+- `BruceIR3.0-UniversalIR-RF-Full.zip` — IR 829 + RF 13.275 files
+- `BruceIR3.0-UniversalIR-RF-Lite.zip` — IR 7 + RF 103 files
 
 ---
 
